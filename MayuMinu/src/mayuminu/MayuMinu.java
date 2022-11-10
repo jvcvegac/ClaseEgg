@@ -78,7 +78,7 @@ public class MayuMinu {
         int num2= lee.nextInt();
         int opcion;
     do {
-
+ 
         System.out.println("_____________________");
         System.out.println("|        MENÚ       |");
         System.out.println("---------------------");
@@ -90,7 +90,7 @@ public class MayuMinu {
         System.out.println("---------------------");
         System.out.println("| Elija una Opción  |");
         System.out.println("---------------------");
-
+ 
     opcion=lee.nextInt();
     switch (opcion){
      case 1 -> sumar(num1, num2);
@@ -111,8 +111,6 @@ public class MayuMinu {
        }
      }while (opcion!=5);
 }
-
-
 
 
     static void sumar(int n1, int n2) {
