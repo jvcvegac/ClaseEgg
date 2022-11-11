@@ -17,7 +17,7 @@ public class Letras {
          String voc="", cons="", sig="";
          int n_voc=0, n_cons=0, n_sig=0;
          
-         String entrada="¡hola! freddy, y María con José!";
+         String entrada="¡Hola! Lucía, ¿Dónde se encuentra María con José?";
          
          for (int i=0; i<entrada.length(); i++) {
              for (int j=0; j<signos.length; j++) {
