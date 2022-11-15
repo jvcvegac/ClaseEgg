@@ -52,14 +52,15 @@ public class Divisas {
          //optsn=optsn.toUpperCase();
          if (optsn.equalsIgnoreCase("S")) {
              System.out.println("Ha elegido salir del Programa, Hasta la Próxima");
+             opcion=5;
              break;
          }else {
-             opcion=0;
+             opcion=5;
              break;
          }  }        
           default : System.out.println("Ha Elegido una Opción que no es Válida, Inténtelo de Nuevo");         
          }      
-     }while (opcion!=4);
+     }while (opcion<5);
  }
 
     static double convierte(double moneda, int opta, double TC) {
