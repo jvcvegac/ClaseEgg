@@ -9,7 +9,7 @@ public class Letras {
     //Scanner lee= new Scanner (System.in, "ISO-8859-1");
     public static void main(String[] args) {
 
-         char[] signos={',' , ';' , '.' , ':' , '¿' , '?' , '¡', '!'};
+         char[] signos={',' , ';' , '.' , ':' , '¿' , '?' , '¡', '!', '&', '%'};
          char[] vocales={'a' , 'e', 'i', 'o', 'u', 'í', 'ó', 'ú','á','é'};
          char[] consona={'b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm',
                          'n', 'ñ', 'p', 'q', 'r', 's', 't', 'v', 'w',
@@ -17,7 +17,7 @@ public class Letras {
          String voc="", cons="", sig="";
          int n_voc=0, n_cons=0, n_sig=0;
          
-         String entrada="¡Hola! Lucía, ¿Dónde se encuentra María con José?";
+         String entrada="&%¡Bién por esto!,¡Hola! Lucía, ¿Dónde se encuentra María con José?";
          
          for (int i=0; i<entrada.length(); i++) {
              for (int j=0; j<signos.length; j++) {

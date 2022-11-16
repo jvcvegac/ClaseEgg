@@ -20,7 +20,7 @@ public class CuadradoMagico {
            }else {
                   System.out.println("Valor Ingresado Fuera de Rango, Vuelva a intentar");
                   System.out.println("Hasta el momento ha ingresado "+conta+" valores correctamente"); 
-                  sies=0;
+                  //sies=0;
                }                
         } while (conta!=9);
         
@@ -66,7 +66,7 @@ public class CuadradoMagico {
             for(i=0; i<=N-2; i++) {
                 cmagico[N-1][j]=cmagico[N-1][j]+cmagico[i][j];
                 if (i==j) {  
-                    sumdp=sumdp+cmagico[i][j]; //Suma diagonal principal
+                    sumdp=sumdp+cmagico[i][j]; //Suma diagonal principal 
                     //cmagico[N-1][N-1]=cmagico[N-1][N-1]+cmagico[i][j];
                 }
             }
@@ -74,7 +74,8 @@ public class CuadradoMagico {
         for(j=0; j<=N-1; j++){
             k=j+1;
             if (k<N-1) {
-               if((cmagico[N-1][j]!=cmagico[N-1][k]) || (cmagico[j][N-1]!=cmagico[k][N-1]) || (cmagico[N-1][j]!=sumds))  {
+               if((cmagico[N-1][j]!=cmagico[N-1][k]) || (cmagico[j][N-1]!=cmagico[k][N-1]) || 
+                            (cmagico[N-1][j]!=sumds) || (sumdp!=sumds))  {
                 versi=1;
                 
             }else {
