@@ -1,7 +1,7 @@
 
 package matricontenida;
 
-
+import java.util.Arrays;
 public class MatriContenida {
 
     public static void main(String[] args) {
@@ -63,21 +63,31 @@ public class MatriContenida {
             System.out.println("");
             
         }
-     /*  
+     //Compara Matrices
        System.out.println(""); 
        int opts=0, conta=0;
        k=0;
        ji=0;
+       int ia=0, ja=0;
+       int Matri3C[][]=new int [A][B];
        do {        
-           for (i=0; i<=A-1; i++) {
-            for(j=0; j<=B-1; j++) {
-              if(Matri3[i][j]==Matri1[k][ji]) {
+           for (i=ia; i<=A-1; i++) {
+            for(j=ja; j<=B-1; j++) {
+               Matri3C[k][ji]=Matri1[i][j];
+               ji=++ji;
+              }  
+               k=k+1;
+           }
+            if (Arrays.deepEquals(Matri3C,  Matri3)){
+                System.out.println("La Matriz 3x3 está contenida en Matriz 10x10");             
+                System.out.println("Desde la posición: "+ia+","+);
+              }else {
                   
               }
             } 
         }
            
-       }while (opts==0);  */
+       }while (opts==0);  
        
        
 }
